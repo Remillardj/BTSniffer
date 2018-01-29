@@ -1,3 +1,7 @@
+'''
+ sshBruteForce: A simple python script to bruteforce an SSH connection using
+ 	a list of passwords. This is a linear way of bruteforcing.
+'''
 import paramiko
 
 class sshBruteForce():
@@ -28,7 +32,7 @@ class sshBruteForce():
 							sys.exit(0)
 						else:
 							pass
-				
+
 
 	def create_ssh_session(self, username, password, hostname, port_num):
 		ssh = paramiko.SSHClient()
